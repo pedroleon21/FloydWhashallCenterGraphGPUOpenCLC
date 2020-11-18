@@ -3,3 +3,5 @@
 *.cl
 *.h
 .vs
+.sln
+utils.cpp
