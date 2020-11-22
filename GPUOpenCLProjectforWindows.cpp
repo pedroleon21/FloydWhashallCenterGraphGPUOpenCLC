@@ -127,25 +127,6 @@ void calcula_centralidade(int **dist)
     free(grau);
     free(soma);
 }
-
-void printMatrix(int dist[][DATA_SIZE])
-{
-    int i, j, k = 0;
-    for (i = 0; i < DATA_SIZE; i++)
-    {
-        for (j = 0; j < DATA_SIZE; j++)
-        {
-            k++;
-            if (dist[i][j] == INF)
-                printf("%7s", "INF");
-            else
-                cout << dist[i][j] << " ";
-        }
-        cout << endl;
-    }
-}
-
-
 void floydWarshall(int **dist)
 {
     int i, j, k;
@@ -161,8 +142,6 @@ void floydWarshall(int **dist)
             }
         }
     }
-    //fim = clock();
-    //printMatrix(dist);
 }
 
 
